@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Chino | Alimentos y Botanas</title>
+    <!--En styleswide están los estilos para dispositivos de más de 1300px de ancho
+        En stylesthin están los estilos para dispositivos de menos de 1300px de ancho
+        En fonts está la importación de fuentes personalizadas
+        En headerwide están los estilos para la barra de navegación, lo dejé ahí para que quede fijo
+        En headerthin están los estilos para la barra de navegación tipo mobile-->
+    <link rel="stylesheet" href="css/styleswide.css">
+    <link rel="stylesheet" href="css/stylesthin.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/headerwide.css">
+    <link rel="stylesheet" href="css/headerthin.css">
+    <link rel="icon" href="res/img/Logo.png">
+</head>
+<body>
+<!--Barra de navegación, la cual queda fija sobre la pantalla-->
+    <div class="header">
+        <div>
+            <a class="btn_logo btnlink" href="index.html"><img class="btn_logo btnimg" src="/res/img/Logo2.png"></a>
+        </div>
+        <nav class="headernav">
+            <a class="btn btn_home" href="index.html">Inicio</a>
+            <a class="btn btn_we" href="#Nosotros">Nosotros</a>
+            <a class="btn btn_prod" href="#Productos">Productos</a>
+        </nav>
+    </div>
+<!--Primera sección de la página, es sólo la imágen de la bandera Mexicana (Está pendiente crear el slider para la segunda imágen)-->
+    <div class="header1" id="Inicio">
+        <img class="imgheader1" src="/res/img/Header1.jpg" alt="Mexico!">
+    </div>
+<!--Sección donde se muestran los 3 principales productos (Tortillas, tostadas y totopos)-->
+    <div class="prodsall">
+        <h2 class="prodtit">Conoce nuestros productos</h2>
+        <ul class="prods">
+            <li class="proddiv">
+                <img class="prodimg" src="/res/img/Prod1.jpg" alt="Tortillas">
+                <a class="prodbtn" href="Plantilla.html">Ir a Tortillas</a>
+            </li>
+            <li class="proddiv">
+                <img class="prodimg" src="/res/img/Prod2.jpg" alt="Tostadas">
+                <a class="prodbtn" href="Plantilla.html">Ir a Tostadas</a>
+            </li>
+            <li class="proddiv">
+                <img class="prodimg" src="/res/img/Prod3.jpg" alt="Totopos">
+                <a class="prodbtn" href="Plantilla.html">Ir a Totopos</a>
+            </li>
+        </ul>
+    </div>
+<!--Sección en la que figura la foto del abuelo (Totalmente random xd) junto a un poquito de por qué son tan piolas-->
+    <div class="history" id="Nosotros">
+        <p class="histdesc">Hacemos alimentos, tostadas & botanas.</p>
+        <h2 class="histh1">Tostadas "El Chino"</h2>
+        <div class="histdiv">
+            <p class="histp">Tostadas El Chino somos la mejor opción porque utilizamos los procesos de verdad, los que utilizaban nuestros abuelos. Hemos descubierto las bondades y flexibiliades del maíz, y utilizamos ese conocimiento para realizar más proyectos y para personalizar a especificación del cliente.</p><br>
+            <img class="histimg" src="/res/img/abuelo.jpg" alt="Abuelito">
+        </div>
+    </div>
+<!--Franja con imágen de cosas picantes con botón de WhatsApp-->
+    <div class="msg">
+        <p class="msgp">Para conocer nuestra gama de productos para restaurantes, tiendas y puestos<br>envíanos un mensaje.</p>
+        <a class="msgbtn" href="https://wa.link/d1pso6">Enviar WhatsApp</a>
+    </div>
+<!--Sección del video con una pequeña descripción de la empresa, pendiente a revisar la inserción del video-->
+    <div class="video">
+        <h2 class="vh2">Empresa orgullosamente tapatía</h2>
+        <p class="videop">Somos una empresa con más de 30 años en el mercado, ofreciendo diversas botanas a base de maíz, trigo, papa, platano, betabel<br>y otros más, con amplias variedades de sabores y presentaciones.</p>
+        <p class="videop">Para ventas de mayoreo tenemos entrega a domicilio en la Zona Metropolitana de Guadalajara y envíos por paquetería a todo México.</p><br>
+        <iframe class="videoframe" width="1080px" height="610px" src="https://youtu.be/NMdo5MlZxsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--No anda, chequear forma correcta-->
+    </div>
+<!--Segunda franja con imágen con un botón al resto de productos-->
+    <div class="curio" id="Productos">
+        <p class="curiop">¿Sabías que la mayoría de nuestros productos los hacemos con<br>
+        maíz mexicano de la más alta calidad? Nuestra meta es hacer<br>
+        productos deliciosos y saludables.</p>
+        <a class="curiobtn" href="Plantilla.html">Nuestros productos</a>
+    </div>
+<!--Sección con api de google maps mostrando la ubicación del negocio-->
+    <div class="map">
+        <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3733.990844440442!2d-103.388421!3d20.62923!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ad992680ae57%3A0xe6db4d2c8ce7f692!2sAlimentos%20y%20Botanas%20%22El%20Chino%22!5e0!3m2!1sen!2smx!4v1729652331431!5m2!1sen!2smx" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<!--Pié de la página donde figura la data de contacto y el formulario para enviar mensaje por e-mail-->
+    <footer class="footer">
+        <div class="ftrtop">
+            <div class="txtleft">
+                <h2 class="foottitl" style="text-align: left;">Contacto</h2>
+                <p>WhatsApp: <br>
+                33-3645-2569</p>
+                <p>Teléfono: <br>
+                33-2177-7923</p>
+                <p>Domicilio: <br>
+                Isla Guadalupe 760 <br>
+                Col. Villa Vicente Guerrero <br>
+                44987 <br>
+                Guadalajara, Jalisco.</p>
+            </div>
+            <fieldset class="form">
+                <legend class="formlegend">¡Queremos saber de tí!</legend>
+                <form class="formalign">
+                    <input class="ftrinp" type="text" placeholder="Nombre">
+                    <input class="ftrinp" type="email" placeholder="E-Mail"><br>
+                    <textarea class="ftrinp txtarea" placeholder="Mensaje"></textarea><br>
+                    <input class="submitbtn" type="submit" value="Enviar">
+                </form>
+            </fieldset>
+        </div>
+<!--Separé el pié en tres partes, esta es la segunda hecha únicamente para poder alinear correctamente el logo con el enlace al aviso de privacidad-->
+        <div class="ftrbot">
+            <img class="ftrimg" src="/res/img/Logo.png" alt="Logo ElChino">
+            <a class="ftrlink" href="">Aviso de Privacidad</a>
+        </div>
+    </footer>
+<!--Tercera parte del pié donde está la firma de quienes hicieron la página-->
+    <div class="sign">
+        <p class="signp">Diseño por Asteroid Studio 2023. Reestructuración por Pargox Team 2024.</p>
+    </div>
+</body>
+</html>
