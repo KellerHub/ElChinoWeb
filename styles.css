@@ -18,6 +18,7 @@ body{
 
 .barraimg{
     height: 70px;
+    transition: filter 0.5s ease-in-out;
 }
 
 .barrabutton{
@@ -27,6 +28,12 @@ body{
     background: none;
     color: #FFF;
     margin: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.barrabutton:hover{
+    color: #D89508;
+    text-shadow: 0px 0px 2px #0007;
 }
 
 /*Mírame... yo soy el body ahora.*/
@@ -182,7 +189,7 @@ body{
     font-weight: lighter;
 }
 
-.wsp button, .produ2 button{
+.wsp button, .produ2 button, .inpsubmit{
     transition: all 0.6s ease-in-out;
     padding: 10px 20px;
     color: white;
@@ -198,7 +205,7 @@ body{
     text-transform: uppercase;
 }
 
-.wsp button:hover, .produ2 button:hover{
+.wsp button:hover, .produ2 button:hover, .inpsubmit:hover{
     border: none;
     border: 1px solid #FF4500;
     border-radius: 100px;
@@ -264,17 +271,48 @@ body{
 }
 
 .secform{
-    grid-area: form;
-    width: 500px;
+    align-self: center;
+    transform: translate(0, 15%);
 }
 
-.inseption input{
-    width: 48%;
+.inseption{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.inpname, .inpemail, .inptxt{
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    background-color: #EEEEEE;
+    border: none;
+    color: #838383;
+    transition: box-shadow 0.5s ease-in-out;
 }
 
 .inptxt{
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+    width: auto;
     resize: none;
-    width: 98.5%;
+}
+
+.inpname:hover, .inpemail:hover, .inptxt:hover{
+    box-shadow: 0px 0px 15px #000A
+}
+
+.inpsubmit{
+    grid-column: 2 / 3;
+    margin: 0;
+    border-radius: 5px;
+    transform: translate(9%, -20%);
+}
+
+.inpsubmit:hover{
+    border-radius: 5px;
 }
 
 .base{
@@ -287,6 +325,7 @@ body{
 
 .base img{
     height: 180px;
+    transition: filter 0.5s ease-in-out;
 }
 
 .base a{
@@ -298,4 +337,14 @@ body{
 /*En esta sección sólo está la firma del grupo de desarrollo*/
 .sign{
     background-color: #222;
+    color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Acá dejo un detalle boludo para los logos.png*/
+
+.barraimg:hover, .base img:hover{
+    filter: drop-shadow(0px 0px 2px #fff7);
 }
