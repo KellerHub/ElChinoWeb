@@ -45,8 +45,49 @@ body{
 }
 
 /*Todo respecto a la primera portada, acá debería estar el slider*/
-.portada{
+.portada1{
     background: url(/res/img/Header1.jpg) center / cover #000;
+}
+
+.portada2{
+    background: url(/res/img/Header2.jpg) center / cover #000;
+}
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    padding-bottom: 50px;
+}
+
+.portada button{
+    transition: all 0.6s ease-in-out;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FF4500;
+    font-family: Google;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.portada button:hover{
+    border: none;
+    border: 1px solid #FF4500;
+    border-radius: 100px;
+    background-color: #FFF;
+    font-family: Google;
+    font-size: 18px;
+    color: #FF4500;
+    box-shadow: 0px 0px 15px #000D;
+    cursor: pointer;
 }
 
 /*La sección "Conoce nuestros productos", esta se va a poner heavy*/

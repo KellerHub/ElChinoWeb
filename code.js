@@ -1,4 +1,19 @@
-let dia = new Date().getDay();
+const imgportada = document.getElementById("portada");
+let img1or2 = imgportada.getAttribute("class")
+const 
+
+
+if (img1or2 === ".portada1") {
+    imgportada.setAttribute("class") = ".portada2";
+
+}
+
+
+
+
+
+
+/* let dia = new Date().getDay();
 
 // segun el dia de la semana, mostramos un mensaje diferente
 switch (dia) {
@@ -23,4 +38,4 @@ switch (dia) {
     case 6:
         alert("¡Sábado de gira! 🚀");
         break;
-}
+} */
