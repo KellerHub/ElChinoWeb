@@ -80,33 +80,76 @@ body{
 }
 
 /*Todo respecto a la primera portada, acá debería estar el slider*/
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.portada{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    z-index: 4;
+}
+
 .portada1{
     background: url(/res/img/Header1.jpg) center / cover #000;
 }
 
 .portada2{
     background: url(/res/img/Header2.jpg) center / cover #000;
+    filter: brightness(0.5);
 }
 
-.portada{
-    display: flex;
-    justify-content: space-between;
-}
-
-.portada button{
-    background-color: transparent;
-    color: #F2F2F2;
-    border: none;
-    font-size: 56px;
-    margin: 50px;
+.portada.active {
+    opacity: 1;
+    z-index: 5;
 }
 
 .portadabtn{
+    background-color: transparent;
+    color: #F2F2F2;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
     font-family: Icons;
+    height: 650px;
+    width: 100px;
+    position: absolute;
+    top: 120px;
+    z-index: 6;
 }
 
-.portada:hover .portadabtn{
+#buttonprev{
+    left: 0;
+    width: 0px;
+    font-size: 0px;
+}
+
+#buttonnext{
+    right: 0;
+    width: 0px;
+    font-size: 0px;
+}
+
+.headercompleto:hover .portadabtn{
     text-shadow: 0px 0px 10px #F2F2F2;
+    background-color: #3332;
+}
+
+.headercompleto:hover #buttonprev{
+    width: 100px;
+    font-size: 56px;
+}
+
+.headercompleto:hover #buttonnext{
+    width: 100px;
+    font-size: 56px;
 }
 
 /*La sección "Conoce nuestros productos", esta se va a poner heavy*/
