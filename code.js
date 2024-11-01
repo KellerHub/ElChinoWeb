@@ -30,6 +30,21 @@ switch (dia) {
 
 
 
+//Se supone que esto hace que el menú desplegable quede totaalmente anclaado al botón de "Productos"
+window.addEventListener('load', () => {
+    const spbutton = document.getElementById("spbutton");
+    const ancla = document.getElementById("ancla");
+
+    const rect = spbutton.getBoundingClientRect();
+
+    ancla.style.position = 'absolute';
+    ancla.style.top = `${rect.bottom + 15}px`;
+    ancla.style.left = `${rect.left}px`;
+});
+
+
+
+
 //Obtenemos la ID de imagen de portada y del boton
 const imgportada = document.getElementById("portada");
 const buttonportada = document.getElementById("buttonportada");
@@ -50,16 +65,4 @@ buttonportada.addEventListener("click",(e)=>{
         imgportada.setAttribute("class","portada1 portada");
         img1or2 = "portada1 portada"
     }
-});
-
-
-window.addEventListener('load', () => {
-    const spbutton = document.getElementById('spbutton');
-    const ancla = document.getElementById('ancla');
-
-    const rect = spbutton.getBoundingClientRect();
-
-    ancla.style.position = 'absolute';
-    ancla.style.top = `${rect.bottom + 20}px`;
-    ancla.style.left = `${rect.left}px`;
 });
