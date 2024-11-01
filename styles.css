@@ -21,7 +21,7 @@ body{
     transition: filter 0.5s ease-in-out;
 }
 
-.barrabutton{
+.barrabutton, .nobutton{
     font-family: Google;
     font-size: 18px;
     border: none;
@@ -33,6 +33,11 @@ body{
 
 .barrabutton:hover{
     color: #D89508;
+    text-shadow: 0px 0px 2px #0007;
+}
+
+.nobutton:hover{
+    color: #FFF;
     text-shadow: 0px 0px 2px #0007;
 }
 
