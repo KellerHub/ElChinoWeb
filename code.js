@@ -18,10 +18,10 @@ switch (dia) {
         day.textContent = ("¡Hoy es miércoles! 🤓");
         break;
     case 4:
-        day.textContent = ("¡Ya es Jueves! 🚀");
+        day.textContent = ("¡Ya es jueves! 🚀");
         break;
     case 5:
-        day.textContent = ("¡Por fin Viernes! 🚀");
+        day.textContent = ("¡Por fin viernes! 🚀");
         break;
     case 6:
         day.textContent = ("¡Sábado de gira! 🚀");
@@ -50,4 +50,16 @@ buttonportada.addEventListener("click",(e)=>{
         imgportada.setAttribute("class","portada1 portada");
         img1or2 = "portada1 portada"
     }
+});
+
+
+window.addEventListener('load', () => {
+    const spbutton = document.getElementById('spbutton');
+    const ancla = document.getElementById('ancla');
+
+    const rect = spbutton.getBoundingClientRect();
+
+    ancla.style.position = 'absolute';
+    ancla.style.top = `${rect.bottom + 20}px`;
+    ancla.style.left = `${rect.left}px`;
 });

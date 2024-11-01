@@ -11,14 +11,15 @@ body{
     background-color: #3545B2;
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .barraimg{
     height: 70px;
     transition: filter 0.5s ease-in-out;
+    margin: 0 150px;
 }
 
 .barrabutton, .nobutton{
@@ -28,17 +29,45 @@ body{
     background: none;
     color: #FFF;
     margin: 5px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
-.barrabutton:hover{
+.barrabutton:hover, .despleg a:hover{
     color: #D89508;
     text-shadow: 0px 0px 2px #0007;
 }
 
+.nobutton{
+    padding: 10px 50px;
+    background-color: #D8950844;
+    transition: background-color 0.5s ease-in-out;
+    margin: 0 110px;
+}
+
 .nobutton:hover{
-    color: #FFF;
-    text-shadow: 0px 0px 2px #0007;
+    background-color: #D8950877;
+}
+
+.spbutton span{
+    font-family: Icons;
+    margin: 0 2px;
+}
+
+.despleg{
+    border-radius: 5px;
+    z-index: 9999;
+    background-color: #3545B2;
+    box-shadow: 0px 0px 10px #2227;
+    position: absolute;
+    padding: 10px 40px;
+    border-top: 3px solid #F2F2F2;
+    font-size: 17px;
+}
+
+.despleg a{
+    color: #F2F2F2;
+    text-decoration: none;
+    line-height: 40px;
 }
 
 /*Mírame... yo soy el body ahora.*/

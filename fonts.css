@@ -7,3 +7,8 @@
     font-family: "Lexend";
     src: url(../res/ttf/Lexend-VariableFont_wght.ttf);
 }
+
+@font-face {
+    font-family: "Icons";
+    src: url(/res/ttf/ElegantIcons.ttf);
+}
