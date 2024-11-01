@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    font-family: Google;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:
+    120px/*Espacio detrás del navbar (#inicio)*/
+    650px/*Portadas del inicio (.headercompleto)*/
+    650px/*Conoce Nuestros Productos (.cnp)*/
+    1000px/*Foto del abuelito (.abue)*/
+    300px/*Opción de enviar mensaje a WhatsApp (.wsp)*/
+    1000px/*Video de youtube (.tapatia)*/
+    300px/*Curiosidad (.produ2)*/
+    450px/*Mapa (.map)*/
+    750px/*Footer (.ftr)*/
+    80px;/*Firma (.sign)*/
+}

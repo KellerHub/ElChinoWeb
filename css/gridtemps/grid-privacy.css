@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    font-family: Google;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:
+    120px 600px /*Acá se añaden nuevos rows*/ 750px 80px;
+}

@@ -1,10 +1,12 @@
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="res/ttf/fonts.css">
+        <link rel="stylesheet" href="css/gridtemps/grid-index.css">
+        <link rel="stylesheet" href="css/styles/styles-header-footer.css">
+        <link rel="stylesheet" href="css/styles/styles-index.css">
         <title>El chino | Alimentos y Botanas</title>
         <link rel="icon" href="/res/img/Logo.png">
     </head>
@@ -13,26 +15,26 @@
         <nav class="barra">
                 <img class="barraimg" src="/res/img/Logo2.png" alt="Logo">
             <div class="barraoptions">
-                <button class="barrabutton">Inicio</button>
-                <button class="barrabutton">Nosotros</button>
+                <a href="#inicio"><button class="barrabutton">Inicio</button></a>
+                <a href="/root/we.html"><button class="barrabutton">Nosotros</button></a>
                 <button class="barrabutton spbutton" id="spbutton">Productos<span>&#x33;</span></button>
+                <!--Recuadro desplegable de opciones para "Productos"-->
+                            <div class="despleg" id="ancla">
+                                <a href="root/prod1.html">Tostadas</a><br>
+                                <a href="root/prod2.html">Tortillas de maíz</a><br>
+                                <a href="root/prod3.html">Tortillas de harina</a><br>
+                                <a href="root/prod4.html">Totopos</a><br>
+                                <a href="root/prod5.html">Churritos de maíz</a><br>
+                                <a href="root/prod6.html">Botanas</a><br>
+                                <a href="root/prod7.html">Línea nopal</a><br>
+                                <a href="root/prod8.html">Línea gourmet</a>
+                            </div>
             </div>
-                <button class="nobutton" id="day">Hola</p>
+                <button class="nobutton" id="day">Hola</button>
         </nav>
-<!--Recuadro desplegable de opciones para "Productos"-->
-            <div class="despleg" id="ancla">
-                <a href="">Tostadas</a><br>
-                <a href="">Tortillas de maíz</a><br>
-                <a href="">Tortillas de harina</a><br>
-                <a href="">Totopos</a><br>
-                <a href="">Churritos de maíz</a><br>
-                <a href="">Botanas</a><br>
-                <a href="">Línea nopal</a><br>
-                <a href="">Línea gourmet</a>
-            </div>
 <!--Mírame... yo soy el body ahora.-->
         <div class="grid">
-        <div></div>
+        <div id="inicio"></div>
 <!--Todo respecto a la primera portada, acá debería estar el slider-->
         <div class="headercompleto">
             <div class="slider">
@@ -43,23 +45,23 @@
             <button class="portadabtn" id="buttonnext">&#x35;</button>
         </div>
 <!--La sección "Conoce nuestros productos"-->
-            <div class="cnp">
+            <div class="cnp" id="cnp">
                 <h1 class="cnptitl">Conoce nuestros productos</h1>
                 <div class="cnpimages">
                     <div class="cnpimage">
                         <h2 class="imgtitl">Tortillas</h2>
-                        <img class="cnpimg" src="/res/img/Prod1.jpg" alt="Tortillas">
-                        <button class="cnpbutton">Ver más...</button>
+                        <img class="cnpimg" src="/res/img/index/Prod1.jpg" alt="Tortillas">
+                        <a href="root/prod2.html"><button class="cnpbutton">Ver más...</button></a>
                     </div>
                     <div class="cnpimage">
                         <h2 class="imgtitl">Tostadas</h2>
-                        <img class="cnpimg" src="/res/img/Prod2.jpg" alt="Tostadas">
-                        <button class="cnpbutton">Ver más...</button>
+                        <img class="cnpimg" src="/res/img/index/Prod2.jpg" alt="Tostadas">
+                        <a href="root/prod1.html"><button class="cnpbutton">Ver más...</button></a>
                     </div>
                     <div class="cnpimage">
                         <h2 class="imgtitl">Totopos</h2>
-                        <img class="cnpimg" src="/res/img/Prod3.jpg" alt="Totopos">
-                        <button class="cnpbutton">Ver más...</button>
+                        <img class="cnpimg" src="/res/img/index/Prod3.jpg" alt="Totopos">
+                        <a href="root/prod4.html"><button class="cnpbutton">Ver más...</button></a>
                     </div>
                 </div>
             </div>
@@ -68,7 +70,7 @@
                 <h2>Hacemos alimentos, tostadas & botanas.</h2>
                 <h1>Tostadas "El Chino"</h1>
                 <p>Tostadas El Chino somos la mejor opción porque utilizamos los procesos de verdad, los que utilizaban nuestros abuelos. Hemos descubierto las bondades y flexibiliades del maíz, y utilizamos ese conocimiento para realizar más proyectos y para personalizar a especificación del cliente.</p>
-                <img src="/res/img/abuelo.jpg" alt="Abuelito">
+                <img src="/res/img/index/abuelo.jpg" alt="Abuelito">
             </div>
 <!--Sección con botón para enviar mensaje de whatsapp-->
             <div class="wsp">
@@ -93,12 +95,12 @@
                 productos deliciosos y saludables.</p>
                 <button>Nestros productos</button>
             </div>
-<!--Todo lo referido al mapa pendiente a insertar-->
+<!--Todo lo referido al mapa-->
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3733.987973965449!2d-103.388006!3d20.629347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ad992680ae57%3A0xe6db4d2c8ce7f692!2sAlimentos%20y%20Botanas%20%22El%20Chino%22!5e0!3m2!1sen!2smx!4v1730144867830!5m2!1sen!2smx" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 <!--El pié de la págia, donde va el disclaimer, los datos de contacto y el formulario para contactar-->
-            <div class="ftr">
+            <footer class="ftr">
                 <div class="data">
                     <h2>Contacto</h2>
                     <p>Whatsapp<br>
@@ -121,15 +123,16 @@
                     </form>
                 </div>
                 <div class="base">
-                    <img src="/res/img/Logo.png" alt="Logo">
-                    <a href="">Aviso de Privacidad</a>
+                    <a href="/Plantillas/plantilla.html"><img src="/res/img/Logo.png" alt="Logo"></a>
+                    <a href="root/privacy.html">Aviso de Privacidad</a>
                 </div>
-            </div>
+            </footer>
 <!--En esta sección sólo está la firma del grupo de desarrollo-->
             <div class="sign">
                 <p>Página web reestructurada por Pargox Team.</p>
             </div>
-        </div><!--Con este div finaaliza la sección grid.-->
-        <script src="code.js"></script>
+        </div><!--Con este div finaliza la sección grid.-->
+        <script src="Js/navbar.js"></script>
+        <script src="Js/index.js"></script>
     </body>
     </html>

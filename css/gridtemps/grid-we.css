@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    font-family: Google;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:
+    120px/*Espacio detrása del nav (#inicio)*/
+    600px/*Portada (.portada)*/
+    1500px/*Cuerpo (.cuerpo)*/
+    300px/*Contacto (.contacto)*/
+    750px/*Footer (.ftr)*/
+    80px;/*Firma (.sign)*/
+}
