@@ -11,6 +11,35 @@
     z-index: 9998;
 }
 
+ul{
+    list-style-type: none;
+}
+
+.barraoptions{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.barraoptions:hover{
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+.linav {
+    float: left;
+    position: relative; /* Necesario para el desplegable */
+}
+
+.barraoptions > li > ul {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 .barraimg{
     height: 70px;
     transition: filter 0.5s ease-in-out;
@@ -45,6 +74,8 @@
 }
 
 .despleg{
+    display: none; /* Oculta el menú por defecto */
+    position: absolute;
     border-radius: 5px;
     z-index: 9999;
     box-shadow: 0px 0px 10px #2227;
@@ -56,9 +87,15 @@
     font-size: 17px;
 }
 
-.despleg a{
+.despleg li {
+    float: none;
+}
+
+.despleg li a{
     color: #F2F2F2;
     text-decoration: none;
+    display: block;
+    text-align: left;
     line-height: 40px;
     transition: all 0.1s ease-in-out;
 }
@@ -67,6 +104,10 @@
     color: #D89508;
     text-shadow: 0px 0px 2px #0007;
     cursor: pointer;
+}
+
+.barraoptions li:hover .despleg {
+    display: block;
 }
 
 /*El pié de la págia, donde va el disclaimer, los datos de contacto y el formulario para contactar*/
