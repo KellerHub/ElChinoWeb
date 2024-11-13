@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.portada');
     let currentSlide = 0;
 
@@ -19,4 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize the slider
     showSlide(currentSlide);
+}); */
+
+const portada1 = document.getElementById("portada1");
+const portada2 = document.getElementById("portada2");
+
+document.getElementById("buttonprev").addEventListener("click",(e)=>{
+    portada1.classList.toggle("active");
+    portada2.classList.toggle("active");
+});
+
+document.getElementById("buttonnext").addEventListener("click",(e)=>{
+    portada1.classList.toggle("active");
+    portada2.classList.toggle("active");
 });
