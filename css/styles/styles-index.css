@@ -6,7 +6,6 @@ body{
 /*Todo respecto a la primera portada, acá debería estar el slider*/
 .slider {
     position: relative;
-    overflow: hidden;
     width: 100%;
     height: 100%;
 }
@@ -19,6 +18,10 @@ body{
     transition: opacity 1s ease-in-out;
     opacity: 0;
     z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .portada1{
@@ -216,7 +219,7 @@ body{
     font-weight: lighter;
 }
 
-.wsp button, .produ2 button{
+.wsp button, .produ2 button, .portada button{
     transition: all 0.6s ease-in-out;
     padding: 10px 20px;
     color: white;
@@ -232,7 +235,7 @@ body{
     text-transform: uppercase;
 }
 
-.wsp button:hover, .produ2 button:hover{
+.wsp button:hover, .produ2 button:hover, .portada button:hover{
     border: none;
     border: 1px solid #FF4500;
     border-radius: 100px;
