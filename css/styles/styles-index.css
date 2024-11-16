@@ -30,7 +30,27 @@ body{
 
 .portada2{
     background: url(/res/img/index/Header2.jpg) center / cover #000;
-    filter: brightness(0.5);
+}
+
+.portada2::before{
+    content: '';
+    filter: brightness(0.8);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.portada2--content{
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .active {

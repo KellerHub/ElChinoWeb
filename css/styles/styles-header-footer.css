@@ -47,6 +47,7 @@ ul{
 }
 
 .nav__dropdown{
+    width: 140px;
     display: none;
     text-align: center;
     text-decoration: none;
