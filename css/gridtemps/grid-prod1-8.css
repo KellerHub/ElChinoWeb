@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    font-family: Google;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:
+    120px/*Espacio detrás del navbar*/
+    600px/*Primera portada*/
+    1100px/*Espacio de muestreo de productos*/
+    400px/*Recuadro para generar pedido*/
+    300px/*Sección de enviar mensaje a través de whatsapp*/
+    750px/*Footer (.ftr)*/
+    80px;/*Firma (.sign)*/
+}

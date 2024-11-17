@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+    font-family: Google;
+}
+
+/*Todo respecto a la primera portada, acá debería estar el slider*/
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.portada{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada1{
+    background: url(https://elchino.com.mx/wp-content/uploads/2023/06/headeroriginal-1.jpg) center / cover #000;
+}
+
+.portada2{
+    background: url(https://elchino.com.mx/wp-content/uploads/2023/06/heroheader4.jpg) center / cover #000;
+}
+
+.portada2::before{
+    content: '';
+    filter: brightness(0.8);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.portada2--content{
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    opacity: 1;
+    z-index: 5;
+}
+
+.portadabtn{
+    background-color: transparent;
+    color: #F2F2F2;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    font-family: Icons;
+    height: 650px;
+    width: 100px;
+    position: absolute;
+    top: 120px;
+    z-index: 6;
+}
+
+#buttonprev{
+    left: 0;
+    width: 0px;
+    font-size: 0px;
+}
+
+#buttonnext{
+    right: 0;
+    width: 0px;
+    font-size: 0px;
+}
+
+.headercompleto:hover .portadabtn{
+    text-shadow: 0px 0px 10px #F2F2F2;
+    background-color: #3332;
+}
+
+.headercompleto:hover #buttonprev{
+    width: 100px;
+    font-size: 56px;
+}
+
+.headercompleto:hover #buttonnext{
+    width: 100px;
+    font-size: 56px;
+}
+
+/*La sección "Conoce nuestros productos", esta se va a poner heavy*/
+.cnp{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cnptitl{
+    font-size: 48px;
+    margin: 100px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Lexend;
+    color: #333;
+}
+
+.imgtitl{
+    color: #333;
+    font-size: 32px;
+}
+
+.cnpimages{
+    transform: translate(0, -20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.cnpimage {
+    position: relative;
+    display: inline-block;
+}
+
+.cnpimage img {
+    border-radius: 10px;
+    height: 300px;
+    display: block;
+    transition: all 0.5s ease; 
+}
+
+.cnpbutton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FF4500;
+    font-family: Google;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.cnpimage:hover img {
+    filter: blur(3px);
+    box-shadow: 0px 0px 15px #000D;
+}
+
+.cnpimage:hover .cnpbutton {
+    opacity: 1;
+}
+
+.cnpbutton:hover{
+    border: none;
+    border: 1px solid #FF4500;
+    border-radius: 100px;
+    background-color: #FFF;
+    font-family: Google;
+    font-size: 18px;
+    color: #FF4500;
+    box-shadow: 0px 0px 15px #000D;
+    cursor: pointer;
+}
+
+/*Acá figura la imagen del abuelito con sus cosillas*/
+.abue, .tapatia{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3% 20%;
+}
+
+.abue h2{
+    font-size: 22px;
+    color: #E09900;
+    font-weight: lighter;
+}
+
+.abue h1, .tapatia h1{
+    font-family: Lexend;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 46px;
+    translate: 0 -25%;
+    color: #333333;
+}
+
+.abue p, .tapatia p{
+    font-family: Lexend;
+    color: #666666;
+    font-size: 17px;
+}
+
+.abue img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/*Sección con botón para enviar mensaje de whatsapp*/
+.wsp, .produ2{
+    background: url(https://elchino.com.mx/wp-content/uploads/2023/06/4.jpg) center / cover #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.wsp p, .produ2 p{
+    font-size: 28px;
+    color: #F2F2F2;
+    line-height: 0.9;
+    font-weight: lighter;
+}
+
+.wsp button, .produ2 button, .portada button{
+    transition: all 0.6s ease-in-out;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FF4500;
+    font-family: Google;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.wsp button:hover, .produ2 button:hover, .portada button:hover{
+    border: none;
+    border: 1px solid #FF4500;
+    border-radius: 100px;
+    background-color: #FFF;
+    font-family: Google;
+    font-size: 18px;
+    color: #FF4500;
+    box-shadow: 0px 0px 15px #000D;
+    cursor: pointer;
+}
+
+/*Descripción de la empresa con video de youtube*/
+.tapatia{
+    background-color: #F2F2F2;
+}
+
+.tapatia iframe{
+    width: 100%;
+    height: 80%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/*Inivitación a conocer los productos*/
+.produ2{
+    background: url(https://elchino.com.mx/wp-content/uploads/2023/06/5.jpg) center / cover #000;
+}
+
+/*Todo lo referido al mapa*/
+.map{
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map iframe{
+    height: 90%;
+    width: 98%;
+    border-radius: 5px;
+}

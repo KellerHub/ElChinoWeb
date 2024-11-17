@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Google";
+    src: url(ProductSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url(Lexend-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Icons";
+    src: url(ElegantIcons.ttf);
+}
