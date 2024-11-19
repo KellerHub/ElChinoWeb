@@ -1,3 +1,15 @@
+:root{
+    --color-enfasis: #FF4500;
+    --color-base: #3545B2;
+    --color-fondo1: #FFFFFF;
+    --color-fondo2: #F2F2F2;
+    --color-fondo3: #222222;
+    --color-font1: #F2F2F2;
+    --color-font2: #333333;
+    --color-font3: #E2A522;
+    --color-font4: #666666;
+}
+
 body{
     margin: 0;
     font-family: Google;
@@ -25,16 +37,16 @@ body{
 }
 
 .portada1{
-    background: url(https://elchino.com.mx/wp-content/uploads/2023/06/headeroriginal-1.jpg) center / cover #000;
+    background: url(https://i.ibb.co/ccWwTs0/GvkJGv0.jpg) center / cover #000;
 }
 
 .portada2{
-    background: url(https://elchino.com.mx/wp-content/uploads/2023/06/heroheader4.jpg) center / cover #000;
+    background: url(https://i.ibb.co/9907sPc/FIwzF3Z.jpg) center / cover #000;
 }
 
 .portada2::before{
     content: '';
-    filter: brightness(0.8);
+    filter: brightness(0.5);
     z-index: 2;
     position: absolute;
     top: 0;
@@ -51,6 +63,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 36px;
+    font-weight: bolder;
 }
 
 .active {

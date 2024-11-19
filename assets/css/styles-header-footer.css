@@ -1,9 +1,23 @@
+:root{
+    --enfasis: #FF4500;
+    --base: #3545B2;
+    --fondo1: #FFFFFF;
+    --fondo2: #F2F2F2;
+    --fondo3: #222222;
+    --font1: #F2F2F2;
+    --font2: #333333;
+    --font3: #E2A522;
+    --font4: #666666;
+    --shadow: #00000077;
+    --glow: #FFFFFF77;
+}
+
 /*Todo lo referido a la barra de navegación superior*/
 
 .nav{
     height: 120px;
     width: 100%;
-    background-color: #3545B2;
+    background-color: var(--base);
     position: fixed;
     display: flex;
     justify-content: space-evenly;
@@ -15,6 +29,10 @@
     height: 70px;
     transition: filter 0.5s ease-in-out;
     cursor: pointer;
+}
+
+.nav__logo:hover{
+    filter: drop-shadow(0px 0px 2px var(--glow));
 }
 
 ul{
@@ -36,7 +54,7 @@ ul{
     font-size: 18px;
     border: none;
     background: none;
-    color: #FFF;
+    color: var(--font1);
     margin: 5px;
     transition: all 0.2s ease-in-out;
 }
@@ -51,14 +69,14 @@ ul{
     display: none;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--font1);
     position: absolute;
     border-radius: 5px;
-    box-shadow: 0 0 10px #2227;
+    box-shadow: 0 0 10px var(--shadow);
     padding: 10px 40px;
-    border-top: 3px solid #F2F2F2;
-    border-bottom: 3px solid #F2F2F2;
-    background-color: #3545B2;
+    border-top: 3px solid var(--fondo2);
+    border-bottom: 3px solid var(--cfondo2);
+    background-color: var(--base);
     opacity: 0.9;
     font-size: 17px;
 }
@@ -68,7 +86,7 @@ ul{
 }
 
 .nav__dropdown li a {
-    color: #FFF;
+    color: var(--font1);
     text-decoration: none;
     display: block;
     text-align: left;
@@ -81,11 +99,12 @@ ul{
 } 
 
 .nav__button:hover, .nav__dropdown a:hover{
-    color: #D89508;
-    text-shadow: 0px 0px 2px #0007;
+    color: var(--font3);
+    text-shadow: 0px 0px 2px var(--shadow);
     cursor: pointer;
 }
 
+/*
 .header__day{
     padding: 10px 50px;
     background-color: #D8950844;
@@ -96,10 +115,11 @@ ul{
     background-color: #D8950877;
     cursor: pointer;
 }
+*/
 
 /*El pié de la págia, donde va el disclaimer, los datos de contacto y el formulario para contactar*/
 .ftr{
-    background-color: #3545B2;
+    background-color: var(--base);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -108,7 +128,7 @@ ul{
     'data form'
     'base base';
     padding: 0 20%;
-    color: #F2F2F2;
+    color: var(--font1);
     font-size: 18px;
 }
 
@@ -136,9 +156,9 @@ ul{
     font-family: sans-serif;
     font-size: 14px;
     padding: 20px;
-    background-color: #EEEEEE;
+    background-color: var(--fondo2);
     border: none;
-    color: #838383;
+    color: var(--font4);
     transition: box-shadow 0.5s ease-in-out;
 }
 
@@ -150,7 +170,7 @@ ul{
 }
 
 .inpname:hover, .inpemail:hover, .inptxt:hover{
-    box-shadow: 0px 0px 15px #000A
+    box-shadow: 0px 0px 15px var(--shadow);
 }
 
 .base{
@@ -169,13 +189,13 @@ ul{
 .base a{
     margin: 20px;
     text-decoration: none;
-    color: #F2F2F2;
+    color: var(--fondo2);
 }
 
 /*En esta sección sólo está la firma del grupo de desarrollo*/
 .sign{
-    background-color: #222;
-    color: #F2F2F2;
+    background-color: var(--fondo3);
+    color: var(--font1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +204,7 @@ ul{
 /*Acá dejo un detalle boludo para los logos.png*/
 
 .barraimg:hover, .base img:hover{
-    filter: drop-shadow(0px 0px 2px #fff7);
+    filter: drop-shadow(0px 0px 2px var(--glow));
     cursor: pointer;
 }
 
@@ -192,16 +212,16 @@ ul{
 .inpsubmit{
     transition: all 0.6s ease-in-out;
     padding: 10px 20px;
-    color: white;
+    color: var(--fondo1);
     border: none;
     width: 250px;
     height: 50px;
     border-radius: 100px;
-    background-color: #FF4500;
+    background-color: var(--enfasis);
     font-family: Google;
     font-size: 18px;
     text-decoration: none;
-    color: #FFF;
+    color: var(--fondo1);
     text-transform: uppercase;
     grid-column: 2 / 3;
     margin: 0;
@@ -210,9 +230,9 @@ ul{
 }
 
 .inpsubmit:hover{
-    border: 1px solid #FF4500;
-    background-color: #FFF;
-    color: #FF4500;
-    box-shadow: 0px 0px 15px #000D;
+    border: 1px solid var(--enfasis);
+    background-color: var(--fondo1);
+    color: var(--enfasis);
+    box-shadow: 0px 0px 15px var(--shadow);
     cursor: pointer;
 }
