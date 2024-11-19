@@ -8,8 +8,6 @@
     --clr-font2: #333333;
     --clr-font3: #E2A522;
     --clr-font4: #666666;
-    --clr-shadow: #00000077;
-    --clr-glow: #F2F2F277;
     --fnt-title56: 56px;
     --fnt-subtitle48: 48px;
     --fnt-imgtitle32: 32px;
@@ -17,8 +15,4 @@
     --fnt-22: 22px;
     --fnt-button18: 18px;
     --fnt-p18: 18px;
-}
-
-.pedido{
-    background-color: #E6E6E6;
 }

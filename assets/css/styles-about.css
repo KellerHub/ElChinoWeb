@@ -1,5 +1,26 @@
+:root{
+    --clr-enfasis: #FF4500;
+    --clr-base: #3545B2;
+    --clr-fondo1: #FFFFFF;
+    --clr-fondo2: #F2F2F2;
+    --clr-fondo3: #222222;
+    --clr-font1: #F2F2F2;
+    --clr-font2: #333333;
+    --clr-font3: #E2A522;
+    --clr-font4: #666666;
+    --clr-shadow: #00000077;
+    --clr-glow: #F2F2F277;
+    --fnt-title48: 48px bolder;
+    --fnt-subtitle32: 32px;
+    --fnt-division28: 28px;
+    --fnt-22: 22px;
+    --fnt-button18: 18px;
+    --fnt-p18: 18px;
+}
+
 .portada{
     background: url(https://i.ibb.co/rcg5HQn/JqNvOdl.jpg) center / cover #000;
+    font-size: var(--fnt-subtitle48);
 }
 
 .cuerpo{

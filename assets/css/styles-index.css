@@ -1,13 +1,22 @@
 :root{
-    --color-enfasis: #FF4500;
-    --color-base: #3545B2;
-    --color-fondo1: #FFFFFF;
-    --color-fondo2: #F2F2F2;
-    --color-fondo3: #222222;
-    --color-font1: #F2F2F2;
-    --color-font2: #333333;
-    --color-font3: #E2A522;
-    --color-font4: #666666;
+    --clr-enfasis: #FF4500;
+    --clr-base: #3545B2;
+    --clr-fondo1: #FFFFFF;
+    --clr-fondo2: #F2F2F2;
+    --clr-fondo3: #222222;
+    --clr-font1: #F2F2F2;
+    --clr-font2: #333333;
+    --clr-font3: #E2A522;
+    --clr-font4: #666666;
+    --clr-shadow: #00000077;
+    --clr-glow: #F2F2F277;
+    --fnt-title56: 56px;
+    --fnt-subtitle48: 48px;
+    --fnt-imgtitle32: 32px;
+    --fnt-division28: 28px;
+    --fnt-22: 22px;
+    --fnt-button18: 18px;
+    --fnt-p18: 18px;
 }
 
 body{
@@ -26,7 +35,7 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    color: white;
+    color: var(--clr-font1);
     transition: opacity 1s ease-in-out;
     opacity: 0;
     z-index: 4;
@@ -63,7 +72,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 36px;
+    font-size: var(--fnt-imgtitle32);
     font-weight: bolder;
 }
 
@@ -74,7 +83,7 @@ body{
 
 .portadabtn{
     background-color: transparent;
-    color: #F2F2F2;
+    color: var(--clr-font1);
     border: none;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
@@ -99,7 +108,7 @@ body{
 }
 
 .headercompleto:hover .portadabtn{
-    text-shadow: 0px 0px 10px #F2F2F2;
+    text-shadow: 0px 0px 10px var(--clr-glow);
     background-color: #3332;
 }
 
@@ -115,7 +124,7 @@ body{
 
 /*La sección "Conoce nuestros productos", esta se va a poner heavy*/
 .cnp{
-    background-color: #FFF;
+    background-color: var(--clr-fondo1);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -127,13 +136,12 @@ body{
     font-size: 48px;
     margin: 100px;
     text-transform: uppercase;
-    font-weight: bolder;
     font-family: Lexend;
-    color: #333;
+    color: var(--clr-font2);
 }
 
 .imgtitl{
-    color: #333;
+    color: var(--clr-font2);
     font-size: 32px;
 }
 
@@ -165,23 +173,22 @@ body{
     opacity: 0;
     transition: all 0.5s ease;
     padding: 10px 20px;
-    color: white;
+    color: var(--clr-font1);
     border: none;
     cursor: pointer;
     width: 250px;
     height: 50px;
     border-radius: 100px;
-    background-color: #FF4500;
+    background-color: var(--clr-enfasis);
     font-family: Google;
     font-size: 18px;
     text-decoration: none;
-    color: #FFF;
     text-transform: uppercase;
 }
 
 .cnpimage:hover img {
     filter: blur(3px);
-    box-shadow: 0px 0px 15px #000D;
+    box-shadow: 0px 0px 15px var(--clr-shadow);
 }
 
 .cnpimage:hover .cnpbutton {
@@ -190,19 +197,19 @@ body{
 
 .cnpbutton:hover{
     border: none;
-    border: 1px solid #FF4500;
+    border: 1px solid var(--clr-enfasis);
     border-radius: 100px;
-    background-color: #FFF;
+    background-color: var(--clr-fondo1);
     font-family: Google;
     font-size: 18px;
-    color: #FF4500;
-    box-shadow: 0px 0px 15px #000D;
+    color: var(--clr-enfasis);
+    box-shadow: 0px 0px 15px var(--clr-shadow);
     cursor: pointer;
 }
 
 /*Acá figura la imagen del abuelito con sus cosillas*/
 .abue, .tapatia{
-    background-color: #F2F2F2;
+    background-color: var(--clr-fondo2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +219,7 @@ body{
 
 .abue h2{
     font-size: 22px;
-    color: #E09900;
+    color: var(--clr-font3);
     font-weight: lighter;
 }
 
@@ -222,13 +229,13 @@ body{
     font-weight: bolder;
     font-size: 46px;
     translate: 0 -25%;
-    color: #333333;
+    color: var(--clr-font2);
 }
 
 .abue p, .tapatia p{
     font-family: Lexend;
-    color: #666666;
-    font-size: 17px;
+    color: var(--clr-font4);
+    font-size: 18px;
 }
 
 .abue img{
@@ -248,7 +255,7 @@ body{
 
 .wsp p, .produ2 p{
     font-size: 28px;
-    color: #F2F2F2;
+    color: var(--clr-font1);
     line-height: 0.9;
     font-weight: lighter;
 }
@@ -256,34 +263,33 @@ body{
 .wsp button, .produ2 button, .portada button{
     transition: all 0.6s ease-in-out;
     padding: 10px 20px;
-    color: white;
+    color: var(--clr-font1);
     border: none;
     width: 250px;
     height: 50px;
     border-radius: 100px;
-    background-color: #FF4500;
+    background-color: var(--clr-enfasis);
     font-family: Google;
     font-size: 18px;
     text-decoration: none;
-    color: #FFF;
     text-transform: uppercase;
 }
 
 .wsp button:hover, .produ2 button:hover, .portada button:hover{
     border: none;
-    border: 1px solid #FF4500;
+    border: 1px solid var(--clr-enfasis);
     border-radius: 100px;
-    background-color: #FFF;
+    background-color: var(--clr-fondo2);
     font-family: Google;
     font-size: 18px;
-    color: #FF4500;
+    color: var(--clr-enfasis);
     box-shadow: 0px 0px 15px #000D;
     cursor: pointer;
 }
 
 /*Descripción de la empresa con video de youtube*/
 .tapatia{
-    background-color: #F2F2F2;
+    background-color: var(--clr-fondo1);
 }
 
 .tapatia iframe{
@@ -300,7 +306,7 @@ body{
 
 /*Todo lo referido al mapa*/
 .map{
-    background-color: #222;
+    background-color: var(--clr-fondo3);
     display: flex;
     align-items: center;
     justify-content: center;

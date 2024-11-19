@@ -1,29 +1,74 @@
-let dia = new Date().getDay();
+const fecha = new Date();
+const semana = new Date().getDay();
+const mes = new Date().getMonth();
 
-//Obtenemos la ID de la etiqueta que queremos que se sobreescriba con el dia
-const day = document.getElementById("day");
+document.getElementById("day").innerHTML = fecha.getDate();
+document.getElementById("year").innerHTML = fecha.getFullYear();
 
-// segun el dia de la semana, mostramos un mensaje diferente
-switch (dia) {
+//Obtenemos la ID de la etiqueta que queremos que se sobreescriba
+const week = document.getElementById("week");
+const month = document.getElementById("month");
+
+// segun el dia de la semana y del mes, mostramos un mensaje diferente
+switch (semana) {
     case 0:
-        day.textContent = ("¡Domingo de descanso! 😴");
+        week.innerHTML = ("Domingo");
         break;
     case 1:
-        day.textContent = ("¡Volvio el lunes! 😢");
+        week.innerHTML = ("Lunes");
         break;
     case 2:
-        day.textContent = ("¡Hoy es martes! 🥵");
+        week.innerHTML = ("Martes");
         break;
     case 3:
-        day.textContent = ("¡Hoy es miércoles! 🤓");
+        week.innerHTML = ("Miércoles");
         break;
     case 4:
-        day.textContent = ("¡Ya es jueves! 🚀");
+        week.innerHTML = ("Jueves");
         break;
     case 5:
-        day.textContent = ("¡Por fin viernes! 🚀");
+        week.innerHTML = ("Viernes");
         break;
     case 6:
-        day.textContent = ("¡Sábado de gira! 🚀");
+        week.innerHTML = ("Sábado");
+        break;
+}
+
+switch (mes) {
+    case 0:
+        month.innerHTML = ("Enero");
+        break;
+    case 1:
+        month.innerHTML = ("Febrero");
+        break;
+    case 2:
+        month.innerHTML = ("Marzo");
+        break;
+    case 3:
+        month.innerHTML = ("Abril");
+        break;
+    case 4:
+        month.innerHTML = ("Mayo");
+        break;
+    case 5:
+        month.innerHTML = ("Junio");
+        break;
+    case 6:
+        month.innerHTML = ("Julio");
+        break;
+    case 7:
+        month.innerHTML = ("Agosto");
+        break;
+    case 8:
+        month.innerHTML = ("Septiembre");
+        break;
+    case 9:
+        month.innerHTML = ("Octubre");
+        break;
+    case 10:
+        month.innerHTML = ("Noviembre");
+        break;
+    case 11:
+        month.innerHTML = ("Diciembre");
         break;
 }
