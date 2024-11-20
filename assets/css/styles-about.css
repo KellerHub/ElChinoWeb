@@ -10,17 +10,40 @@
     --clr-font4: #666666;
     --clr-shadow: #00000077;
     --clr-glow: #F2F2F277;
-    --fnt-title48: 48px bolder;
-    --fnt-subtitle32: 32px;
-    --fnt-division28: 28px;
+    --fnt-supertitle78: 78px;
+    --fnt-title56: 56px;
+    --fnt-subtitle48: 48px;
+    --fnt-imgtitle32: 32px;
+    --fnt-division26: 26px;
     --fnt-22: 22px;
     --fnt-button18: 18px;
     --fnt-p18: 18px;
 }
 
 .portada{
+    position: relative;
+    z-index: 1;
+}
+
+.portada::before{
     background: url(https://i.ibb.co/rcg5HQn/JqNvOdl.jpg) center / cover #000;
-    font-size: var(--fnt-subtitle48);
+    align-items: center;
+    filter: brightness(0.5);
+    content: '';
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.portada h1{
+    z-index: 2;
+    font-family: lexend;
+    color: var(--clr-font1);
+    font-size: var(--fnt-supertitle78);
+    position: relative;
+    top: 30%;
+    text-align: center;
 }
 
 .cuerpo{
@@ -29,4 +52,39 @@
 
 .contacto{
     background: url(https://i.ibb.co/6NwVK67/7b9APcr.jpg) center / cover #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto p{
+    color: var(--clr-font1);
+    font-size: var(--fnt-division26);
+}
+
+.contacto button{
+    transition: all 0.5s ease;
+    padding: 10px 20px;
+    color: var(--clr-font1);
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: var(--clr-enfasis);
+    font-family: Google;
+    font-size: var(--fnt-p18);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contacto button:hover{
+    border: 1px solid var(--clr-enfasis);
+    border-radius: 100px;
+    background-color: var(--clr-fondo1);
+    font-size: var(--fnt-p18);
+    color: var(--clr-enfasis);
+    box-shadow: 0px 0px 15px var(--clr-shadow);
+    cursor: pointer;
 }

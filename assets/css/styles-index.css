@@ -10,10 +10,11 @@
     --clr-font4: #666666;
     --clr-shadow: #00000077;
     --clr-glow: #F2F2F277;
+    --fnt-supertitle78: 78px;
     --fnt-title56: 56px;
     --fnt-subtitle48: 48px;
     --fnt-imgtitle32: 32px;
-    --fnt-division28: 28px;
+    --fnt-division26: 26px;
     --fnt-22: 22px;
     --fnt-button18: 18px;
     --fnt-p18: 18px;
@@ -114,12 +115,12 @@ body{
 
 .headercompleto:hover #buttonprev{
     width: 100px;
-    font-size: 56px;
+    font-size: var(--fnt-title56);
 }
 
 .headercompleto:hover #buttonnext{
     width: 100px;
-    font-size: 56px;
+    font-size: var(--fnt-title56);
 }
 
 /*La sección "Conoce nuestros productos", esta se va a poner heavy*/
@@ -132,17 +133,9 @@ body{
     text-align: center;
 }
 
-.cnptitl{
-    font-size: 48px;
-    margin: 100px;
-    text-transform: uppercase;
-    font-family: Lexend;
-    color: var(--clr-font2);
-}
-
 .imgtitl{
     color: var(--clr-font2);
-    font-size: 32px;
+    font-size: var(--fnt-imgtitle32);
 }
 
 .cnpimages{
@@ -181,7 +174,7 @@ body{
     border-radius: 100px;
     background-color: var(--clr-enfasis);
     font-family: Google;
-    font-size: 18px;
+    font-size: var(--fnt-p18);
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -201,7 +194,7 @@ body{
     border-radius: 100px;
     background-color: var(--clr-fondo1);
     font-family: Google;
-    font-size: 18px;
+    font-size: var(--fnt-p18);
     color: var(--clr-enfasis);
     box-shadow: 0px 0px 15px var(--clr-shadow);
     cursor: pointer;
@@ -218,24 +211,27 @@ body{
 }
 
 .abue h2{
-    font-size: 22px;
+    font-size: var(--fnt-22);
     color: var(--clr-font3);
     font-weight: lighter;
 }
 
-.abue h1, .tapatia h1{
+/*Esta sección contiene el estilo de todos los títulos en conjunto*/
+.abue h1, .tapatia h1, .cnptitl{
     font-family: Lexend;
+    letter-spacing: -1px;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 46px;
+    font-size: var(--fnt-subtitle48);
     translate: 0 -25%;
     color: var(--clr-font2);
 }
+/*Fin de la sección de títulos*/
 
 .abue p, .tapatia p{
     font-family: Lexend;
     color: var(--clr-font4);
-    font-size: 18px;
+    font-size: var(--fnt-p18);
 }
 
 .abue img{
@@ -253,8 +249,12 @@ body{
     justify-content: center;
 }
 
+.produ2{
+background: url(https://elchino.com.mx/wp-content/uploads/2023/06/5.jpg) center / cover #000;
+}
+
 .wsp p, .produ2 p{
-    font-size: 28px;
+    font-size: var(--fnt-division26);
     color: var(--clr-font1);
     line-height: 0.9;
     font-weight: lighter;
@@ -270,7 +270,7 @@ body{
     border-radius: 100px;
     background-color: var(--clr-enfasis);
     font-family: Google;
-    font-size: 18px;
+    font-size: var(--fnt-p18);
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -281,9 +281,9 @@ body{
     border-radius: 100px;
     background-color: var(--clr-fondo2);
     font-family: Google;
-    font-size: 18px;
+    font-size: var(--fnt-p18);
     color: var(--clr-enfasis);
-    box-shadow: 0px 0px 15px #000D;
+    box-shadow: 0px 0px 15px var(--clr-shadow);
     cursor: pointer;
 }
 
@@ -297,11 +297,6 @@ body{
     height: 80%;
     margin: 20px 0;
     border-radius: 5px;
-}
-
-/*Inivitación a conocer los productos*/
-.produ2{
-    background: url(https://elchino.com.mx/wp-content/uploads/2023/06/5.jpg) center / cover #000;
 }
 
 /*Todo lo referido al mapa*/

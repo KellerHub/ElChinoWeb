@@ -10,10 +10,11 @@
     --clr-font4: #666666;
     --clr-shadow: #00000077;
     --clr-glow: #F2F2F277;
+    --fnt-supertitle78: 78px;
     --fnt-title56: 56px;
     --fnt-subtitle48: 48px;
     --fnt-imgtitle32: 32px;
-    --fnt-division28: 28px;
+    --fnt-division26: 26px;
     --fnt-22: 22px;
     --fnt-button18: 18px;
     --fnt-p18: 18px;
@@ -66,11 +67,22 @@ ul{
     transition: all 0.2s ease-in-out;
 }
 
-.header__day {
-    background-color: #3545a5;
+.header__day{
     width: 30vh;
-    border-bottom: #f2f2f2 double 5px;
-    border-right: #f2f2f2 double 5px;
+    position: absolute;
+    color: var(--clr-font1);
+    padding-bottom: 1px;
+    right: 40px;
+}
+
+.header__day::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 150%;
+    border-bottom: 1px solid var(--clr-font1);
+    transform: translateX(50%);
 }
 
 .nav__button span{
