@@ -16,8 +16,8 @@
     --fnt-imgtitle32: 32px;
     --fnt-division26: 26px;
     --fnt-22: 22px;
-    --fnt-button18: 18px;
-    --fnt-p18: 18px;
+    --fnt-button18: 16px;
+    --fnt-p18: 16px;
 }
 
 body{
@@ -136,6 +136,12 @@ body{
 .imgtitl{
     color: var(--clr-font2);
     font-size: var(--fnt-imgtitle32);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.imgtitl:hover{
+    color: var(--clr-enfasis);
 }
 
 .cnpimages{
@@ -149,6 +155,10 @@ body{
 .cnpimage {
     position: relative;
     display: inline-block;
+}
+
+.cnpimage a{
+    text-decoration: none;
 }
 
 .cnpimage img {
@@ -229,7 +239,7 @@ body{
 /*Fin de la sección de títulos*/
 
 .abue p, .tapatia p{
-    font-family: Lexend;
+    font-family: google;
     color: var(--clr-font4);
     font-size: var(--fnt-p18);
 }
@@ -237,6 +247,7 @@ body{
 .abue img{
     max-width: 100%;
     border-radius: 5px;
+    box-shadow: 3px 3px 10px var(--clr-shadow);
 }
 
 /*Sección con botón para enviar mensaje de whatsapp*/
@@ -297,6 +308,7 @@ background: url(https://elchino.com.mx/wp-content/uploads/2023/06/5.jpg) center 
     height: 80%;
     margin: 20px 0;
     border-radius: 5px;
+    box-shadow: 3px 3px 10px var(--clr-shadow);
 }
 
 /*Todo lo referido al mapa*/

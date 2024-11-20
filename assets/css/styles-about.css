@@ -26,7 +26,7 @@
 }
 
 .portada::before{
-    background: url(https://i.ibb.co/rcg5HQn/JqNvOdl.jpg) center / cover #000;
+    background: url(https://i.ibb.co/rcg5HQn/JqNvOdl.jpg) 0 120px / contain no-repeat fixed #000;
     align-items: center;
     filter: brightness(0.5);
     content: '';
@@ -47,7 +47,46 @@
 }
 
 .cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    line-height: 24px;
+}
 
+.cuerpo h2{
+    font-size: var(--fnt-22);
+    color: var(--clr-font3);
+    font-family: google;
+    font-weight: lighter;
+}
+
+.cuerpo h1{
+    font-size: var(--fnt-subtitle48);
+    text-transform: uppercase;
+    font-family: lexend;
+    color: var(--clr-font2);
+}
+
+.cuerpo img{
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px var(--clr-shadow);
+}
+
+.cuerpo p{
+    font-size: var(--fnt-p18);
+    color: var(--clr-font4);
+    font-weight: lighter;
+}
+
+.box{
+    background-color: var(--clr-fondo2);
+    padding: 30px;
+    border-radius: 30px;
+    margin: 20px;
 }
 
 .contacto{

@@ -20,6 +20,10 @@
     --fnt-p18: 18px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*Todo lo referido a la barra de navegación superior*/
 
 .nav{
@@ -68,11 +72,11 @@ ul{
 }
 
 .header__day{
-    width: 30vh;
     position: absolute;
     color: var(--clr-font1);
     padding-bottom: 1px;
     right: 40px;
+    top: 5px;
 }
 
 .header__day::after{

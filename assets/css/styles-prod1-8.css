@@ -16,10 +16,109 @@
     --fnt-imgtitle32: 32px;
     --fnt-division26: 26px;
     --fnt-22: 22px;
-    --fnt-button18: 18px;
-    --fnt-p18: 18px;
+    --fnt-button18: 16px;
+    --fnt-p18: 16px;
+}
+/*Sección de configuraciones generales*/
+
+.portada{
+    position: relative;
+    z-index: -1;
+}
+.portada::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: -1;
+}
+
+.sec_title{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: var(--fnt-supertitle78);
+    font-family: lexend;
+    text-transform: uppercase;
+    color: var(--clr-font1);
+    z-index: 1;
+}
+
+.intro{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-family: google;
+}
+
+.intro::after{
+    content: '';
+    margin: auto;
+    width: 100px;
+    border-bottom: solid 3px var(--clr-base);
+    filter: brightness(2);
+}
+
+.intro h2{
+    color: var(--clr-font3);
+    font-size: var(--fnt-22);
+    font-weight: lighter;
+}
+
+.intro h1{
+    color: var(--clr-font2);
+    font-size: var(--fnt-subtitle48);
+    text-transform: uppercase;
+    font-family: lexend;
+}
+
+.intro p{
+    color: var(--clr-font4);
+    font-size: var(--fnt-p18);
+}
+
+.intro button{
+    transition: all 0.6s ease-in-out;
+    padding: 10px 20px;
+    color: var(--clr-font1);
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: var(--clr-enfasis);
+    font-family: Google;
+    font-size: var(--fnt-p18);
+    text-decoration: none;
+    margin: 10px;
+}
+
+.intro button:hover{
+    border: none;
+    border: 1px solid var(--clr-enfasis);
+    border-radius: 100px;
+    background-color: var(--clr-fondo2);
+    font-family: Google;
+    font-size: var(--fnt-p18);
+    color: var(--clr-enfasis);
+    box-shadow: 0px 0px 15px var(--clr-shadow);
+    cursor: pointer;
 }
 
 .pedido{
     background-color: #E6E6E6;
+}
+
+
+/*Inicio de sección de configuraciones específicas por página*/
+/*Tostadas (tstds.html)*/
+.portadatstds::before{
+    background: url(https://i.ibb.co/bdjvCTm/EDbKpsv.jpg) 0 120px / contain no-repeat fixed #000;
+    filter: brightness(0.5)
 }

@@ -12,3 +12,8 @@
     font-family: "Icons";
     src: url(ElegantIcons.ttf);
 }
+
+@font-face {
+    font-family: "Altone";
+    src: url(Altone.ttf);
+}

@@ -19,3 +19,36 @@
     --fnt-button18: 18px;
     --fnt-p18: 18px;
 }
+
+.text{
+    width: 60%;
+    margin: auto;
+    font-family: altone;
+    line-height: 23px;
+    font-weight: lighter;
+}
+
+.text h1{
+    color: var(--clr-font2);
+    font-size: var(--fnt-imgtitle32);
+}
+
+.text h3{
+    color: var(--clr-font2);
+    font-size: var(--fnt-division26);
+}
+
+.text p{
+    color: var(--clr-font4);
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.text span{
+    font-family: google;
+}
+
+.footerimg{
+    margin: 0;
+    margin-bottom: 25px;
+}

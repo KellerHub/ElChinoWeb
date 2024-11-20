@@ -9,7 +9,7 @@ body{
     grid-template-rows:
     120px/*Espacio detrás del navbar (#inicio)*/
     650px/*Portada (.portada)*/
-    1000px/*Cuerpo (.cuerpo)*/
+    1500px/*Cuerpo (.cuerpo)*/
     300px/*Contacto (.contacto)*/
     750px/*Footer (.ftr)*/
     80px;/*Firma (.sign)*/
