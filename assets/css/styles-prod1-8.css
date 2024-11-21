@@ -46,6 +46,7 @@
     text-transform: uppercase;
     color: var(--clr-font1);
     z-index: 1;
+    width: 100%;
 }
 
 .intro{
@@ -192,7 +193,7 @@
 }
 
 .item p{
-    margin: 20px 40px;
+    margin: auto 40px;
     font-size: var(--fnt-18);
     color: var(--clr-font4);
 }
