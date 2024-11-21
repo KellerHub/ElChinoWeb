@@ -16,7 +16,7 @@
     --fnt-imgtitle32: 32px;
     --fnt-division26: 26px;
     --fnt-22: 22px;
-    --fnt-button18: 16px;
+    --fnt-button18: 18px;
     --fnt-p18: 16px;
 }
 /*Sección de configuraciones generales*/
@@ -84,8 +84,8 @@
     font-size: var(--fnt-p18);
 }
 
-.intro button{
-    transition: all 0.6s ease-in-out;
+.intro button, .box button, .divisor button{
+    transition: all 0.5s ease-in-out;
     padding: 10px 20px;
     color: var(--clr-font1);
     border: none;
@@ -94,18 +94,14 @@
     border-radius: 100px;
     background-color: var(--clr-enfasis);
     font-family: Google;
-    font-size: var(--fnt-p18);
+    font-size: var(--fnt-button18);
     text-decoration: none;
-    margin: 10px;
+    margin: 25px;
 }
 
-.intro button:hover{
-    border: none;
+.intro button:hover, .box button:hover, .divisor button:hover{
     border: 1px solid var(--clr-enfasis);
-    border-radius: 100px;
     background-color: var(--clr-fondo2);
-    font-family: Google;
-    font-size: var(--fnt-p18);
     color: var(--clr-enfasis);
     box-shadow: 0px 0px 15px var(--clr-shadow);
     cursor: pointer;
@@ -113,12 +109,176 @@
 
 .pedido{
     background-color: #E6E6E6;
+    padding: 60px;
+    display: flex;
+    align-items: center;
 }
 
+.box{
+    background-color: var(--clr-base);
+    width: 55%;
+    height: 100%;
+    margin: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-font1);
+}
+
+.box h1{
+    font-family: icons;
+    font-size: var(--fnt-title56);
+    margin: 0px;
+}
+
+.box p{
+    font-family: google;
+    font-size: var(--fnt-button18);
+}
+
+.divisor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisor h2{
+    color: var(--clr-font1);
+    font-size: var(--fnt-division26);
+    font-family: altone;
+}
+
+.divisor button{
+    background-color: var(--clr-base);
+}
+
+.productos{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: auto;
+}
+
+.item{
+    background-color: var(--clr-fondo2);
+    height: 420px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: altone;
+    transition: all 0.3s linear;
+}
+
+.item h3{
+    font-size: var(--fnt-22);
+    color: var(--clr-font2);
+}
+
+.item img{
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px var(--clr-shadow);
+}
+
+.item p{
+    margin: 20px 40px;
+    font-size: var(--fnt-18);
+    color: var(--clr-font4);
+}
+
+.productos:hover > :not(:hover){
+    filter: blur(2px) brightness(0.9);
+}
+
+.item:hover{
+    box-shadow: 0px 0px 10px 1px var(--clr-enfasis);
+}
+
+span{
+    font-family: google;
+}
 
 /*Inicio de sección de configuraciones específicas por página*/
+/*Tortillas de maíz (tdm.html)*/
+.portada_tdm::before{
+    background: url(https://i.ibb.co/XZm6mSM/6d8d8lO.jpg) 0 120px / contain no-repeat fixed #000;
+    filter: brightness(0.5);
+}
+
+.divisor_tdm{
+    background: url(https://i.ibb.co/k1Br57y/ARSrNFv.jpg) center / cover #000;
+}
 /*Tostadas (tstds.html)*/
-.portadatstds::before{
+.portada_tstds::before{
     background: url(https://i.ibb.co/bdjvCTm/EDbKpsv.jpg) 0 120px / contain no-repeat fixed #000;
-    filter: brightness(0.5)
+    filter: brightness(0.5);
+}
+
+.divisor_tstds{
+    background: url(https://i.ibb.co/3YwrT25/bYAmAQC.jpg) center / cover #000;
+}
+/*Tortillas de Harina (tdh.html)*/
+.portada_tdh::before{
+    background: url(https://i.ibb.co/rZgLmpZ/Qman2z3.jpg) 0 120px / contain no-repeat fixed #000;
+    filter: brightness(0.5);
+}
+
+.divisor_tdh{
+    background: url(https://i.ibb.co/DRpQq6j/HsdPLZB.jpg) center / cover #000;
+}
+/*Totopos (ttps.html)*/
+.portada_ttps::before{
+    background: url(https://i.ibb.co/SKJGnQn/W95X2LK.jpg) 0 120px / contain no-repeat fixed #000;
+    filter: brightness(0.5);
+}
+
+.divisor_ttps{
+    background: url(https://i.ibb.co/y4fVrMV/MiGeFQU.jpg) center / cover #000;
+}
+/*Churritos de Maíz (cdm.html)*/
+.portada_cdm::before{
+    background: url(https://i.ibb.co/cJSfrgP/IjYEXCE.jpg) 0 120px / contain no-repeat fixed #000;
+    filter: brightness(0.5);
+}
+
+.divisor_cdm{
+    background: url(https://i.ibb.co/wLx1nM4/U7SxpaA.jpg) center / cover #000;
+}
+/*Botanas (btns.html)*/
+.portada_btns::before{
+    background: url(https://i.ibb.co/QdW4v7s/4AlWcOZ.jpg) 0 120px / contain no-repeat fixed #000;
+    filter: brightness(0.5);
+}
+
+.divisor_btns{
+    background: url(https://i.ibb.co/rQpW2f0/Ja4nkpq.jpg) center / cover #000;
+}
+/*Línea Nopal (lnpl.html)*/
+.portada_lnpl::before{
+    background: url(https://i.ibb.co/L5Lrz2d/nKfFStc.jpg) 0 120px / contain no-repeat fixed #000;
+    filter: brightness(0.5);
+}
+
+.divisor_lnpl{
+    background: url(https://i.ibb.co/DRpQq6j/HsdPLZB.jpg) center / cover #000;
+}
+/*Línea Gourmet (lgrmt.html)*/
+.portada_lgrmt::before{
+    background: url(https://i.ibb.co/0FsjQmj/qwpbVwO.jpg) 0 120px / contain no-repeat fixed #000;
+    filter: brightness(0.5);
+}
+
+.divisor_lgrmt{
+    background: url(https://i.ibb.co/PZjG8jm/cQZp48y.jpg) center / cover #000;
 }
